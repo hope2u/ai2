@@ -9,7 +9,7 @@ from keras.utils import img_to_array
 from keras.models import load_model
 import cv2
 
-model_s = load_model("app/static/model/mnist_Adam2_20210516.h5")
+model_s = load_model("app/static/model/mnist_202311.h5")
 path = ""; secure_files = []
 	
 def allowed_file(filename):
