@@ -21,7 +21,7 @@ def evaluate_img(path):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     # Convert a color image to a grayscale image 
     ret, thresh = cv2.threshold(gray, 0, 255,cv2.THRESH_OTSU|cv2.THRESH_BINARY_INV)
-    # Convert the grayscale image to blak and white image
+    # Convert the grayscale image to black and white image
     # cv2.imshow('threh',thresh)
     # cv2.waitKey(0)
     rect_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (2,2))
